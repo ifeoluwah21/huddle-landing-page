@@ -1,0 +1,125 @@
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+$dark-cyan: hsl(192, 100%, 9%);
+$pale-blue: hsl(207, 100%, 98%);
+$header-font: "Poppins", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  &__wrapper {
+    width: 92%;
+    margin: 1rem auto 0;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 35%;
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    border: 2px solid $light-pink;
+    background-color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: $light-pink;
+  }
+
+  &__hero {
+    margin-top: 3rem;
+  }
+}
+
+.hero {
+  &__title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: $header-font;
+    color: $dark-cyan;
+    line-height: 1.5;
+  }
+  &__text {
+    margin: 2rem 0;
+    font-size: 1rem;
+    text-align: center;
+    color: $dark-cyan;
+    line-height: 1.5;
+  }
+
+  &__btn-container {
+    text-align: center;
+  }
+  &__btn {
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 20px;
+    background-color: $pink;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: 1px 1px 5px 2px #888;
+  }
+  &__img-container {
+    width: 100%;
+    margin: 3.5rem 0;
+  }
+}
+
+.reports {
+  width: fit-content;
+  margin-inline: auto;
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+  &__result {
+    font-size: 3.5rem;
+    color: $dark-cyan;
+    font-family: $header-font;
+  }
+  &__info {
+    font-size: 1rem;
+    color: #888;
+  }
+}
