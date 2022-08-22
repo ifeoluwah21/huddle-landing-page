@@ -18,10 +18,6 @@ h4 {
   font-family: "Poppins", sans-serif;
 }
 
-img {
-  width: 100%;
-}
-
 .header__wrapper {
   width: 92%;
   margin: 1rem auto 0;
@@ -40,12 +36,20 @@ img {
 .header__btn {
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
-  border: 2px solid hsl(321deg, 100%, 78%);
+  border: 2px solid hsl(322deg, 100%, 66%);
   background-color: #fff;
   font-size: 1rem;
   text-transform: capitalize;
   text-align: center;
+  color: hsl(322deg, 100%, 66%);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  transform: scale(1);
+}
+.header__btn:hover {
+  border-color: hsl(321deg, 100%, 78%);
   color: hsl(321deg, 100%, 78%);
+  transform: scale(1.05);
 }
 .header__hero {
   margin-top: 3rem;
@@ -81,10 +85,20 @@ img {
   font-size: 1rem;
   font-family: inherit;
   box-shadow: 1px 1px 5px 2px #888;
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.hero__btn:hover {
+  background-color: hsl(321deg, 100%, 78%);
+  transform: scale(1.05);
 }
 .hero__img-container {
   width: 100%;
   margin: 3.5rem 0;
+}
+.hero__img-container img {
+  width: 100%;
 }
 
 .reports {
@@ -113,6 +127,22 @@ img {
 }
 .wrapper__img-container {
   padding: 3rem 0;
+}
+.wrapper__img-container img {
+  width: 100%;
+}
+.wrapper--cyan {
+  color: #fff;
+  background-color: hsl(192deg, 100%, 9%);
+}
+.wrapper--cyan::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(192deg, 100%, 9%);
 }
 .wrapper--blue {
   background-color: hsl(207deg, 100%, 98%);
@@ -146,6 +176,143 @@ img {
   margin: 1rem 0;
   color: hsl(192deg, 100%, 9%);
   line-height: 1.5;
+}
+.wrapper__btn {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background-color: hsl(322deg, 100%, 66%);
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px #888;
+  text-align: center;
+  text-transform: capitalize;
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.wrapper__btn:hover {
+  background-color: hsl(321deg, 100%, 78%);
+  transform: scale(1.05);
+}
+.wrapper__btn-container {
+  text-align: center;
+  margin: 2rem 0 5rem;
+}
+
+.curved {
+  width: 100%;
+}
+.curved img {
+  width: 100%;
+}
+
+.footer__info {
+  width: 92%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.footer__title {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer__text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+.footer__form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer__input {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.footer__btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.footer__btn--pink {
+  background-color: hsl(322deg, 100%, 66%);
+  color: #fff;
+}
+.footer__btn--pink:hover {
+  background-color: hsl(321deg, 100%, 78%);
+  transform: scale(1.05);
+}
+.footer__contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.footer__contact span:nth-of-type(1) {
+  margin-right: 1rem;
+}
+.footer__nav-container {
+  width: 25%;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__item {
+  list-style: none;
+}
+.footer__item a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__item a i {
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+  transform: scale(1);
+  cursor: pointer;
+}
+.footer__item a i:hover {
+  color: hsl(210deg, 100%, 59%);
+  transform: scale(1.1);
+}
+
+.form__input-container {
+  width: 100%;
+}
+.form__error-message {
+  max-height: 0px;
+  color: hsl(0deg, 100%, 63%);
+  overflow-y: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.form__error-message--show {
+  max-height: 30px;
+}
+
+@media screen and (min-width: 1023px) {
+  .header__wrapper {
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
