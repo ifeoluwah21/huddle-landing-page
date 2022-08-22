@@ -339,3 +339,9 @@ h4 {
     }
   }
 }
+
+@media screen and (min-width: 1023px) {
+  .header__wrapper {
+    width: 85%;
+  }
+}
